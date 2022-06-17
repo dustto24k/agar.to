@@ -19,11 +19,10 @@ details will be added
 
 ### Requirements
 
-- [ ] Realtime Clock
-- [ ] Log in feature using local storage
+- [x] Realtime Clock
+- [x] Log in feature using local storage
 - [ ] To-do list using local storage
 - [ ] Random Background Image
 - [ ] Weather using Geolocation
-- [ ] Fancy CSS💖
-
+- [ ] # Fancy CSS💖
 - [ ] Submission before June 20, 6 a.m.
