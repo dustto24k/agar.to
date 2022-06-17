@@ -21,7 +21,7 @@ details will be added
 
 - [x] Realtime Clock
 - [x] Log in feature using local storage
-- [ ] To-do list using local storage
+- [x] To-do list using local storage
 - [ ] Random Background Image
 - [ ] Weather using Geolocation
 - [ ] # Fancy CSS💖
