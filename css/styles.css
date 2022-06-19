@@ -23,3 +23,49 @@ body {
   height: 100vh;
   background: white;
 }
+
+.title {
+  margin-top: 5px;
+  height: 40px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#login-input {
+  height: 24px;
+  width: 172px;
+  font-size: 20px;
+}
+
+.chapter {
+  margin-top: 5px;
+}
+
+#clock :first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#weather :first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#hr-line {
+  background-color: black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+  margin-bottom: 45px;
+  width: 330px;
+  height: 1px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 352px;
+  height: 45px;
+  font-size: 20px;
+}

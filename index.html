@@ -9,21 +9,43 @@
   </head>
   <body>
     <div id="paper">
-      <div id="clock"></div>
-      <div id="weather">weather here</div>
-      <div id="title">
+      <div class="title">
         <form id="login-form">
-          <input required type="text" placeholder="Enter Name" /> 's To-Do List
+          <input
+            id="login-input"
+            required
+            type="text"
+            maxlength="12"
+            placeholder="Unnamed Scientist"
+          />'s To-Do List
         </form>
       </div>
-      <form id="todo-form">
-        <input required type="text" placeholder="whatcha need to-do?" />
-      </form>
+      <div class="chapter">
+        <div id="clock">
+          <span>Current Time: </span>
+          <span></span>
+        </div>
+        <div id="weather">
+          <span>Lab Temperature: </span>
+          <span></span>
+        </div>
+        <div id="hr-line"></div>
+      </div>
       <div id="todo-list"></div>
+      <form class="footer" id="todo-form">
+        <input
+          class="footer"
+          required
+          type="text"
+          maxlength="30"
+          placeholder="> generate sample by writing a To-Do"
+        />
+      </form>
     </div>
     <canvas id="petri"></canvas>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/temp_weather.js"></script>
   </body>
 </html>

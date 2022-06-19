@@ -1,6 +1,6 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const title = document.querySelector("#title");
+const title = document.querySelector(".title");
 let userName = localStorage.getItem("username");
 
 function getName(event) {
