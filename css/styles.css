@@ -57,9 +57,69 @@ body {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 15px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   width: 330px;
   height: 1px;
+}
+
+.todo-container {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 80px) 5px 75px 40px;
+  grid-template-rows: repeat(3, 20px);
+}
+
+.todo-container :nth-child(1) {
+  display: flex;
+  padding-inline: 5px;
+  word-break: keep-all;
+  align-items: center;
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}
+
+.todo-container :nth-child(2) {
+  grid-column: 4 / 5;
+  grid-row: 1 / 4;
+  background-color: black;
+  justify-self: center;
+  align-self: center;
+  width: 1px;
+  height: 80%;
+}
+
+.spec {
+  padding-inline: 5px;
+  font-size: 10px;
+}
+
+.todo-container :nth-child(3) {
+  align-self: flex-end;
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+}
+
+.todo-container :nth-child(4) {
+  align-self: center;
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+
+.todo-container :nth-child(5) {
+  align-self: flex-start;
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+}
+
+.todo-container :nth-child(6) {
+  align-self: center;
+  justify-self: center;
+  height: 52%;
+  width: 80%;
+  font-size: 20px;
+  background-color: tomato;
+  grid-column: 6 / 7;
+  grid-row: 1 / 4;
 }
 
 .footer {

@@ -9,23 +9,59 @@ function saveTodo() {
 }
 
 function deleteTodo(event) {
-  const li = event.target.parentElement;
-  li.remove();
-  todoArray = todoArray.filter((todo) => todo.id !== li.id);
+  const container = event.target.parentElement;
+  container.remove();
+  todoArray = todoArray.filter((todo) => todo.id !== parseInt(container.id));
   saveTodo();
 }
 
 function paintTodo(todo) {
-  const li = document.createElement("li");
-  li.id = todo.id;
-  const span = document.createElement("span");
-  span.innerText = todo.text;
+  const container = document.createElement("div");
+  container.className = "todo-container";
+  container.id = todo.id;
+
+  const text = document.createElement("div");
+  text.innerText = todo.text;
+
+  const vrLine = document.createElement("div");
+
+  const created = document.createElement("div");
+  created.className = "spec";
+
+  const birth = todo.time;
+  created.innerText = `${JSON.stringify(birth).split("-")[1]}/${JSON.stringify(
+    birth
+  )
+    .split("-")[2]
+    .substr(0, 2)} ${String(
+    Math.abs(JSON.stringify(birth).split("-")[2].substr(3, 2) - 15)
+  ).padStart(2, "0")}:${JSON.stringify(birth).split("-")[2].substr(6, 2)}`;
+
+  const age = document.createElement("div");
+  age.className = "spec";
+
+  const currentTime = new Date();
+  const todoTime = new Date(birth);
+  console.log(todoTime);
+  const time = (currentTime - todoTime) / 1000;
+  age.innerText = `${
+    time > 60 ? `${Math.floor(time / 60)} min` : `${Math.floor(time)} sec`
+  } old`;
+
+  const status = document.createElement("div");
+  status.className = "spec";
+
   const button = document.createElement("button");
-  button.innerText = "❤";
+  button.innerText = "🗑";
   button.addEventListener("click", deleteTodo);
-  li.appendChild(span);
-  li.appendChild(button);
-  todoList.appendChild(li);
+
+  container.appendChild(text);
+  container.appendChild(vrLine);
+  container.appendChild(created);
+  container.appendChild(age);
+  container.appendChild(status);
+  container.appendChild(button);
+  todoList.appendChild(container);
 }
 
 function getTodo(event) {
@@ -33,7 +69,8 @@ function getTodo(event) {
   const newTodo = todoInput.value;
   todoInput.value = "";
   const todo = {
-    id: new Date(),
+    id: Date.now(),
+    time: new Date(),
     text: newTodo,
   };
   todoArray.push(todo);

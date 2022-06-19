@@ -13,22 +13,22 @@
 
 ### You can’t put off a to-do that self-replicates
 
-Whenever you pretend a certain task doesn’t exist, and go back for it after a while, it’s not the same amount as you remember. WHEN DID IT GET SO HUGE??? Well, maybe your to-do is a living creature, which grows, self-replicates, and eventually eats you up..! Project agar.to starts from this somewhat childish idea. I’ll only use vanilla javascript on frontend, additionally desigining with some css skills I’m also practicing with ‘CSS Layout Masterclass’. My hopes are that I could maybe make css objects move on canvas, using basic animating — so it could actually look ‘alive’. BTW The name is just a parody of ‘agar.io’. Just like any developer, I get lazy when naming things.
+Whenever you pretend a certain task doesn’t exist, and go back for it after a while, it’s not the same amount as you remember. WHEN DID IT GET SO HUGE??? Well, maybe your to-do is a living creature, which grows, self-replicates, and eventually eats you up..! Project agar.to starts from this somewhat childish idea. I’ll only use vanilla javascript on frontend, additional desigining with some css skills I’m also practicing in ‘CSS Layout Masterclass’. My hopes are that I could possibly make css objects move on canvas, using basic animating — so it could actually look ‘alive’. BTW The name is just a parody of ‘agar.io’. Just like any developer, I get lazy when naming things.
 
 ### Features
 
-1. Minimalized clock / weather
+Minimalized clock / weather
 
 - Counting time every seconds seemed “too much” since the whole concept was a ‘science report’. Added current date instead, as said, it is a common format for reports.
 - For the same reason, decided to only load the temperature data. Converts the default metric (which is Kelvin) into Celcius, returning up to — or is it down..? anyway, — two digits below zero.
 
-2. Time logged + labeled To-Do (work-in-progress)
+Time logged + labeled To-Do (work-in-progress)
 
 - Creating and deleting to-dos will be immediately updated to the canvas, generating/exterminating colorized agar.
 - Each To-Do will save their generated time, calculate how old they are, and ‘divide’(read 3rd para for the concept) based on it.
 - Planning to categorize the development levels — which is how old they are — of each agar colonies. (the higher the level is, the more catastrophic and how careless you were about your own to-do) Some nominees for name of each level are: “enormous”, “huge”, “catastrophic”, “cute”, “dominant”, “fresh”, etc.
 
-3. Responsive Layout (distant goal)
+Responsive Layout (distant goal)
 
 - Just a plan to make it sexier.
 
