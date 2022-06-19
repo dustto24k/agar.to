@@ -39,12 +39,15 @@ Responsive Layout (distant goal)
 - [x] Realtime Clock
 - [x] Log in feature using local storage
 - [x] To-do list using local storage
-- [ ] Random Background Image
+- [x] Random Background Image
 - [x] Weather using Geolocation
-- [ ] # Fancy CSS💖
-- [ ] Submission before June 20, 6 a.m.
+- [ ] # Fancy CSS💖 // not fancy enough...
+- [x] Submission before June 20, 6 a.m.
 
 ### Hurdles
 
 [06/19 3pm | “positioning hr”]
 Wanted to separate the ‘title area’ and ‘to-do list’ with a line. Thought hr would work, but began to realize it insists to keep its format; alignment, margin, etc; position-related attributes. Threw it away, coming up with an idea to build a fake line, by setting its height tiny so it could look like a line — which actually is a rectangle.
+
+[06/19 12pm | “creating object with id”]
+Planning to use ‘get Date()’ value anyway, so why not use it as an ID purpose too? That didn’t work out because in order to define a html ID, it has to be ‘stringified’. And in that process, every To-Do created within one second shared the same ID (string, simplified), but each of them not pairing with the local storage (not string), causing a trouble not deleting themselves rightaway. Solved the problem by simply sticking to the original code; creating ID by ‘Date.now()’.
